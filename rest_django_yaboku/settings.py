@@ -144,3 +144,8 @@ CSRF_COOKIE_DOMAIN = True
 
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ORIGIN_ALLOW = True
+
+try:
+    from .local_settings import *
+except:
+    pass
